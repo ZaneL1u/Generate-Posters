@@ -1,0 +1,93 @@
+<body>
+  <div class="content">
+    <div class="user-layout">
+      <img class="avatar"
+        src="https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIOgURic9TqUhDdTScibvGM1XYroxYQbwXtwnv1FibMpmpmTZn6u1H64zXbzLeRP8XQWEdwUCJIkd4bQ/132"
+        alt="" />
+      <div class="user">
+        <span class="nickName">${nickName}</span>
+        <span class="ship">${likeTotal}点赞 ${commentTotal}评论</span>
+      </div>
+    </div>
+    <div class="message">
+      <div class="title">${title}</div>
+      <p class="desc">${content}</p>
+    </div>
+  </div>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: SimHei, 黑体, sans-serif;
+    }
+
+    .content {
+      width: 460px;
+      height: 360px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user-layout {
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+    }
+
+    .avatar {
+      width: 66px;
+      height: 66px;
+      border-radius: 66px;
+      margin-right: 20px;
+    }
+
+    .user {
+      width: calc(100% - 86px);
+      height: 66px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .nickName {
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .ship {
+      width: 100%;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .message {
+      flex: 1;
+    }
+
+    .title {
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .desc {
+      line-height: 22px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      width: 100%;
+      font-size: 14px;
+    }
+  </style>
+</body>
